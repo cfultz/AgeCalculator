@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnDatePicker"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:contentDescription="@string/buttonTitle"
+        android:padding="16dp"
+        android:text="@string/buttonTitle"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/selectedDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/selectedDate"
+        android:text="@string/selectedDate"
+        android:textColor="@color/brown"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDatePicker" />
+
+    <TextView
+        android:id="@+id/selectedDateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/selectedDateTitle"
+        android:text="@string/selectedDateTitle"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedDateTV" />
+
+    <TextView
+        android:id="@+id/inDaysTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/selectedDate"
+        android:text="@string/selectedDate"
+        android:textColor="@color/brown"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toEndOf="@+id/btnDatePicker"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/inDaysTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginRight="164dp"
+        android:contentDescription="@string/outputDays"
+        android:text="@string/outputDays"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inDaysTV" />
+
+    <TextView
+        android:id="@+id/inMonthsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/selectedDate"
+        android:text="@string/selectedDate"
+        android:textColor="@color/brown"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toEndOf="@+id/btnDatePicker"
+        app:layout_constraintTop_toBottomOf="@+id/inDaysTitle" />
+
+    <TextView
+        android:id="@+id/inMonthsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginRight="164dp"
+        android:contentDescription="@string/outputMonths"
+        android:text="@string/outputMonths"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inMonthsTV" />
+
+    <TextView
+        android:id="@+id/inYearsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/selectedDate"
+        android:text="@string/selectedDate"
+        android:textColor="@color/brown"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toEndOf="@+id/btnDatePicker"
+        app:layout_constraintTop_toBottomOf="@+id/inMonthsTitle" />
+
+    <TextView
+        android:id="@+id/inYearsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginRight="164dp"
+        android:contentDescription="@string/outputYears"
+        android:text="@string/outputYears"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inYearsTV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
